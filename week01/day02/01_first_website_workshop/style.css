@@ -1,0 +1,54 @@
+nav {
+    background-color: #333333;
+    height: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+ul {
+    position: absolute;
+    right: 10%;
+    margin: 18px 0px 0px 0px;
+    padding: 0px;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+li a {
+    color: #ff0099;
+    font-size: 20px;
+}
+
+#logo {
+    position: absolute;
+    left: 10%;
+    height: 40px;
+    margin: 10px 0px 0px 0px;
+}
+
+div {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body {
+    margin: 0;
+    background-image: url(assets/background.png);
+    font-family: "consolas", courier;
+}
+
+h2 {
+    text-align: center;
+}
+
+#fsd {
+    color: #ff0099;
+}
+
+p {
+    text-align: justify;
+}

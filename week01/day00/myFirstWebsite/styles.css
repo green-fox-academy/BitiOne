@@ -1,0 +1,69 @@
+#logo {
+  position: absolute;
+  height: 46px;
+  top: 12px;
+  left: 10%;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 120px 0px 0px 0px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+#navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #333333;
+  padding: 0px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 22px;
+  position: absolute;
+  right: 10%;
+  margin: 18px 0px 0px 0px;
+  padding: 0px;
+}
+
+li {
+  float: left;
+  margin: 0px 30px 0px 30px;
+}
+
+li a {
+  display: block;
+}
+
+li a, #purpleHeader {
+  color: #ff0099;
+}
+
+h2, #separators {
+  text-align: center;
+}
+
+#separators {
+  font-size: 20px;
+  margin-top: 60px;
+}
+
+#tech {
+  font-size: 50px;
+}
+
+body {
+  background-image: url("assets/background.png");
+  font-family: 'Courier Prime', monospace;
+  margin: 0px;
+  letter-spacing: -1px;
+  line-height: 1.6;
+}
+
+#text {
+  padding: 0% 10% 0% 10%;
+}

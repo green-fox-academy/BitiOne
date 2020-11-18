@@ -1,0 +1,55 @@
+header {
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+    background-color: #737373;
+    padding: 10px 10% 0px 10%;
+    font-size: 26px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    line-height: 2;
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#content {
+    width: 100%;
+    height: 80px;
+    word-break: break-word;
+    resize: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+#title {
+    color: #cccccc;
+}
+
+#submit {
+    width: 100px;
+}
+
+.paragraph {
+    border: 1px solid black;
+    width: 100%;
+    height: 100px;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.cim {
+    font-size: x-large;
+    line-height: 1;
+}
+
+div {
+    padding: 10px;
+}

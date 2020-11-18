@@ -1,0 +1,13 @@
+pwd | print working directory
+ls | List files
+cd | Change directory | cd folder
+touch | Make file | touch file | touch file.txt
+mkdir | Make directory | mkdir folder
+rm | Remove file | rm file.txt
+rm -r | Remove directory | rm -r folder
+clear | clear what’s on the screen
+nano | create a file and write in it | nano file (létrehozza és megnyitja a file-t szerkesztésre, már meglévő file-nál)
+cd .. | go up one level
+cp | copy | cp file.txt folder
+mv | move file | mv file.txt folder
+cat | read the content of file | cat file.txt
