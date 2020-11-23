@@ -7,13 +7,11 @@
 // - Log "p2 is longer" to the console if `secondList` has more elements than
 //   `firstList`
 
-let firstList = [1, 2, 3];
-let secondList = [4, 5];
+let firstList: number[] = [1, 2, 3];
+let secondList: number[] = [4, 5];
 
 if (firstList.length > secondList.length) {
-    console.log(firstList.length);
     console.log('firstList longer than secondList');
 } if (firstList.length < secondList.length) {
-    console.log(secondList.length);
     console.log('secondList longer than firstList');
 }
