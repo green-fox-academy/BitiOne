@@ -5,8 +5,8 @@
 
 let url: string = 'https//www.reddit.com/r/nevertellmethebots';
 
-function insertMissingPart(part: string) {
-    return part.slice(0, 4);
-}
+let splittedUrl: string[] = (url.split(''));
+splittedUrl[]
 
+console.log(splittedUrl);
 console.log(url);

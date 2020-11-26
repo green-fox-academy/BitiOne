@@ -6,6 +6,8 @@
 
 let numbers: number[] = [1, 2, 3, 8, 5, 6];
 
-numbers[3] = 4;
+numbers.map(function([3]) {
+    return [3] = 4;
+})
 
-console.log(numbers[3]);
+console.log(numbers);

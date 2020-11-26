@@ -10,3 +10,9 @@ let numbers: number[] = [4, 5, 6, 7];
 for (let i: number = 0; i < numbers.length; i++) {
     console.log(numbers[i]);
 }
+
+
+//Bonus
+let numbers02: number[] = [4, 5, 6, 7];
+
+numbers02.forEach(element => console.log(element));
