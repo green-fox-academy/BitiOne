@@ -8,4 +8,4 @@ function adder(num: number): number {
     }
 }
 
-console.log(`5! is ${adder(10)}`);
+console.log(adder(10));
