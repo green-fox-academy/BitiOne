@@ -11,11 +11,15 @@ export class Person {
         this._gender = gender ?? 'female';
     }
 
-    public introduse(): void {
-        console.log(`Hi, I'm ${this._name}, a ${this._age} year old ${this._gender}.`);
+    public introduce(): void {
+        console.log(`Hi, I'm ${this._name}, a ${this._age} year old ${this._gender}${this.specialIntroduce()}.`);
     }
 
-    public getGoals(): void {
+    public specialIntroduce(): string {
+        return '';
+    }
+
+    public getGoal(): void {
         console.log(`My goal is: Live for the moment!`);
     }
 }
