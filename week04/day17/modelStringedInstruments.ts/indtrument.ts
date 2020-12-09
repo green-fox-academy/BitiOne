@@ -7,7 +7,7 @@ export abstract class Instrument {
         this._name = name;
     }
 
-    public play(name: string): void {
+    public play(): void {
         console.log('tadaaaa');
     }
 }
