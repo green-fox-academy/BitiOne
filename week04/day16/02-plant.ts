@@ -6,9 +6,8 @@ export class Plant {
   protected _amountsOfWater: number;
   protected _needWater: boolean;
 
-  constructor(color: string, plantType: string) {
+  constructor(color: string) {
     this._color = color;
-    this._plantType = plantType;
     this._amountsOfWater = 0;
     this._needWater = true;
   }
