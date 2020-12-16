@@ -11,4 +11,16 @@ export class Plant {
     this._amountsOfWater = 0;
     this._needWater = true;
   }
+
+  public waterNeedCheck(): string {
+    if(this._needWater === true) {
+      return `needs`;
+    } else {
+      return `dosen't need`;
+    }
+  }
+
+  public getInformation() {
+    console.log(`The ${this._color} ${this._plantType} ${this.waterNeedCheck} water`);
+  }
 }
