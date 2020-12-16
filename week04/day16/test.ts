@@ -4,6 +4,7 @@ import { Person } from "./01-person";
 import { Student } from "./01-student";
 import { Mentor } from "./01-mentor";
 import { Sponsor } from "./01-sponsor";
+import { Cohort } from "./01-cohort";
 
 let people = [];
 

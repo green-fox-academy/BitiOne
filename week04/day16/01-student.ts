@@ -12,12 +12,12 @@ export class Student extends Person {
     this._skippedDays = 0;
   }
 
-  public getGoal(): string {
-    return `My goal is: Be a junior software developer.`;
+  public getGoal(): void {
+    console.log(`My goal is: Be a junior software developer.`);
   }
 
-  public introduce(): string {
-    return `Hi, I'm ${super._name}, a ${super._age} year old ${super._gender} from ${this._previousOrganization} who skipped ${this._skippedDays} days from the course already.`;
+  public introduce(): void {
+    console.log(`Hi, I'm ${super._name}, a ${super._age} year old ${super._gender} from ${this._previousOrganization} who skipped ${this._skippedDays} days from the course already.`);
   }
 
   public skipDays(numberOfDays: number) {
