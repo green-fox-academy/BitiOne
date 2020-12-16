@@ -16,6 +16,6 @@ export class Person {
   }
 
   public getGoal(): string {
-    return `My goal is: Live for the moment!`;
+    return `My goal is: Live for the moment.`;
   }
 }
