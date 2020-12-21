@@ -5,5 +5,10 @@
 // -  Log the sum of the elements of `numbers` to the console
 
 let numbers: number[] = [3, 4, 5, 6, 7];
+let sumOfNumbers = 0;
 
-console.log(numbers);
+for(let i: number = 0; i < numbers.length; i++) {
+  sumOfNumbers += numbers[i];
+}
+
+console.log(sumOfNumbers);
