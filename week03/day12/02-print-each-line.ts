@@ -7,16 +7,18 @@ const fs = require('fs');
 // If the program is unable to read the file (for example it does not exist),
 // then it should print the following error message: "Unable to read file: my-file.txt"
 
+let fileContent: string;
 
 function printLines(fileName: string): void {
   try {
-    let fileContent = fs.readFileSync(fileName, 'utf-8');
-    console.log(fileContent);
+    fileContent = fs.readFileSync(fileName, 'utf-8');
   }
   
   catch(e) {
     console.log(`File does not exist.`);
   }
+  
+  console.log(fileContent);
 }
 
 printLines('my-file.txt');
