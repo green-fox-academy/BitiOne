@@ -8,7 +8,7 @@ function removeDuplicatedChars(readFile: string) {
   let readedFileContent: string;
   let fileContentArray: string[] = [];
   let removedDuplicatedCharsContent: string[] = [];
-  let finaleContent: string;
+  let finalFileContent: string;
 
   try {
     readedFileContent = fs.readFileSync(readFile, 'utf-8');
@@ -27,10 +27,10 @@ function removeDuplicatedChars(readFile: string) {
     }
   }
 
-  finaleContent = removedDuplicatedCharsContent.join('');
+  finalFileContent = removedDuplicatedCharsContent.join('');
 
   try {
-    fs.writeFileSync(readFile, finaleContent);
+    fs.writeFileSync(readFile, finalFileContent);
   }
 
   catch(e) {
