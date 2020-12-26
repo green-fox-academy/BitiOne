@@ -22,7 +22,7 @@ function decryptReversedText(givenFile: string): void {
   
   for(let i: number = 0; i < fileContentArray.length; i++) {
     if(i < (fileContentArray.length - 1)) {
-      finishedFileContent += fileContentArray[i].split('').reverse().join('') +'\r\n';
+      finishedFileContent += `${fileContentArray[i].split('').reverse().join('')}\r\n`;
     } else {
       finishedFileContent += fileContentArray[i].split('').reverse().join('');
     }
