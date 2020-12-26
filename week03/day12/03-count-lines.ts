@@ -7,10 +7,9 @@ const fs = require('fs');
 // It should return zero if it can't open the file, and
 // should not raise any error.
 
-let fileContent: string;
 
 function lineCounter(givenFileName: string) {
-
+  let fileContent: string;
   let splittedData: string[] = [];
 
   try {

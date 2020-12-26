@@ -8,12 +8,10 @@ const fs = require('fs');
 // In case the program is unable to write the file,
 // It should print the following error message: "Unable to write file: my-file.txt"
 
-let toBeWrittenName: string;
 
 function nameWriter(givenName: string): void {
-  toBeWrittenName = givenName;
   try {
-    fs.writeFileSync('04-my-file.txt', toBeWrittenName);
+    fs.writeFileSync('04-my-file.txt', givenName);
   }
 
   catch(e) {
