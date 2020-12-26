@@ -1,0 +1,1 @@
+This is the content, what we want to read and write it to another file.
