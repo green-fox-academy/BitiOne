@@ -1,20 +1,21 @@
 'use strict';
 
 export class PostIt {
-    _backgroundColor: string;
-    _textColor: string;
-    _text: string;
+  protected _backgroundColor: string;
+  protected _text: string;
+  protected _textColor: string;
 
-    constructor(bacgroundColor: string, textColor: string, text: string) {
-    this._backgroundColor = bacgroundColor;
-    this._textColor = textColor;
+  constructor(backgroundColor: string, text: string, textColor: string) {
+    this._backgroundColor = backgroundColor;
     this._text = text;
-    }
+    this._textColor = textColor;
+  }
 }
 
 let postIt01 = new PostIt('orange', 'blue', 'Idea 1');
+let postIt02 = new PostIt('pink', 'black', 'Awsome');
+let postIt03 = new PostIt('yellow', 'green', 'Superb!');
+
 console.log(postIt01);
-let postIt02 = new PostIt('pink', 'black', 'Awesome');
 console.log(postIt02);
-let postIt03 = new PostIt('yellow', 'green', 'Superb');
 console.log(postIt03);
