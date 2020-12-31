@@ -1,7 +1,5 @@
 'use strict';
 
-import { doesNotMatch } from "assert";
-
 export class Person {
   protected _name: string;
   protected _age: number;
@@ -13,11 +11,11 @@ export class Person {
     this._gender = gender ?? 'female';
   }
 
-  public introduce() {
-    console.log(`Hi, I'm ${this._name}, a ${this._age} year old ${this._gender}.`);
+  public introduce(): void {
+    console.log(`Hi, I'm ${this._name}, a ${this._age} year old ${this._gender}`);
   }
 
-  public getGoal() {
-    console.log(`My goal is: Live for the moment!`);
+  public getGoal(): void {
+    console.log(`My goal is: Live for the moment.`);
   }
 }

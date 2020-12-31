@@ -1,7 +1,7 @@
 'use strict';
 
-import { Mentor } from "./01-mentor";
 import { Student } from "./01-student";
+import { Mentor } from "./01-mentor";
 
 export class Cohort {
   protected _name: string;
@@ -14,15 +14,15 @@ export class Cohort {
     this._mentors = [];
   }
 
-  public addStudent(student: Student) {
+  public addStudent(student: Student): void {
     this._students.push(student);
   }
 
-  public addMentor(mentor: Mentor) {
+  public addMentor(mentor: Mentor): void {
     this._mentors.push(mentor);
   }
 
-  public info() {
+  public info(): void {
     console.log(`The ${this._name} cohort has ${this._students.length} students and ${this._mentors.length} mentors.`);
   }
 }
