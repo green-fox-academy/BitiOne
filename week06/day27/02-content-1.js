@@ -1,3 +1,5 @@
+'use strict';
+
 const apple = document.querySelector('.apple');
 const balloon = document.querySelector('.balloon');
 balloon.append(' ' + apple.textContent);
