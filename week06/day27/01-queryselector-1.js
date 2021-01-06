@@ -1,3 +1,5 @@
+'use strict';
+
 const king = document.querySelector('.asteroid');
 console.log(king);
 
