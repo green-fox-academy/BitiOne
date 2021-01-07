@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Coktails</title>
+  </head>
+  <body>
+    <ul>
+      <% if(alcohol === undefined) { %>
+        <% for(let i = 0; i < cocktails.length; i++) { %>
+          <li><%= cocktails[i].name %></li>
+        <% } %>
+      <% } else { %>
+        <% for(let i = 0; i < cocktails.length; i++) { %>
+          <% for(let j = 0; j < cocktails[i].contains.length; j++) { %>
+            <% if(alcohol === cocktails[i].contains[j]) { %>
+              <li><%= cocktails[i].name %></li>
+            <% } %>
+          <% } %>
+        <% } %>
+      <% } %>
+    </ul>
+  </body>
+</html>
