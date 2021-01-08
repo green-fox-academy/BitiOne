@@ -1,0 +1,24 @@
+#header {
+  display: flex;
+  width: 800px;
+  height: 60px;
+  background-color: purple;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  width: 80px;
+  height: 30px;
+  margin-left: 15px;
+  list-style-type: none;
+  background-color: cyan;
+}
+
+#main.content {
+  width: 600px;
+  height: 600px;
+  background-color: yellow;
+}
