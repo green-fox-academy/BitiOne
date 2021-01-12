@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+#mainContainer {
+  width: 100%;
+  max-width: 800px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: purple;
+  align-items: center;
+}
+
+.headerButtons {
+  height: 35px;
+  background-color: cyan;
+}
+
+#headerButton01 {
+  width: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+#headerButton02 {
+  width: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+#headerButton03 {
+  width: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+#headerButton04 {
+  width: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: 15px;
+}
+#headerButton05 {
+  width: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+#mainBodyContainer {
+  display: flex;
+  align-items: center;
+}
+
+#mainBodyMainArea {
+  width: 100%;
+  height: 800px;
+  padding: 15px;
+  background-color: yellow;
+}
+
+#mainBodyBottomContainer {
+  display: flex;
+  align-items: center;
+}
+
+#sideBar {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 800px;
+  padding: 15px;
+  background-color: green;
+}
+
+.sidebarButton {
+  width: 260px;
+  height: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #660066;
+}
