@@ -21,8 +21,60 @@ conn.connect((err) =>{
   console.log('Connected to MySQL.');
 });
 
-app.get('/hello', (req, res) => {
-  res.send('Hello World!');
+app.get('/posts', (req, res) => {
+  conn.query('SELECT * FROM posts;', (err, rows) => {
+    if(err) {
+      res.status(500).json(err);
+    }
+    const obj01 = {
+      posts: rows
+    };
+    res.status(200).json(obj01);
+  });
+});
+
+app.post('/posts', (req, res) => {
+  conn.query('INSERT INTO posts (title, url) VALUES (?, ?);', [req.body.title, req.body.url], (err, rows) => {
+    if(err) {
+      res.status(500).json(err);
+      return;
+    }
+    conn.query('SELECT * FROM posts WHERE id=(SELECT MAX(id) FROM posts);', (err, rows) => {
+      if(err) {
+        res.status(500).json(err);
+      }
+      res.setHeader('Content-type', 'application/json');
+      res.status(200).json(rows[0]);
+    });
+  });
+});
+
+app.put('/posts/:id/upvote', (req, res) => {
+  conn.query(`UPDATE posts SET score = score + 1 WHERE id=${req.params.id};`, (err, rows) => {
+    if(err) {
+      res.status(500).json(err);
+    }
+    conn.query(`SELECT * FROM posts WHERE id=${req.params.id};`, (err, rows) => {
+      if(err) {
+        res.status(500).json(err);
+      }
+      res.status(200).json(rows[0]);
+    });
+  });
+});
+
+app.put('/posts/:id/downvote', (req, res) => {
+  conn.query(`UPDATE posts SET score = score - 1 WHERE id=${req.params.id};`, (err, rows) => {
+    if(err) {
+      res.status(500).json(err);
+    }
+    conn.query(`SELECT * FROM posts WHERE id=${req.params.id};`, (err, rows) => {
+      if(err) {
+        res.status(500).json(err);
+      }
+      res.status(200).json(rows[0]);
+    });
+  });
 });
 
 app.listen(PORT);
