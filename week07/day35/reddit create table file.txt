@@ -6,6 +6,3 @@ CREATE TABLE `posts` (
 `score` INT DEFAULT 0,
 PRIMARY KEY (`id`)
 );
-
-INSERT INTO posts (title, url)
-VALUES ('Blalalalala', 'www.tralalala.com');

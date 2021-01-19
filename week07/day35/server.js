@@ -26,10 +26,10 @@ app.get('/posts', (req, res) => {
     if(err) {
       res.status(500).json(err);
     }
-    const obj01 = {
+    const containerObject = {
       posts: rows
     };
-    res.status(200).json(obj01);
+    res.status(200).json(containerObject);
   });
 });
 
