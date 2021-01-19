@@ -9,7 +9,7 @@ const countListItems = () => {
   for(let i = 0; i < itemArray.length; i++) {
     itemCounter ++;
   }
-  result.innerText = `There are ${itemCounter} item in the page.`;
+  result.textContent = `There are ${itemCounter} item in the page.`;
   itemCounter = 0;
 };
 
