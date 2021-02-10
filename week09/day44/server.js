@@ -21,15 +21,19 @@ conn.connect((err) =>{
   console.log('Connected to MySQL.');
 });
 
+app.get('/', (req, res) => {
+  res.sendFile('/public/index.html');
+});
+
 app.get('/posts', (req, res) => {
   conn.query('SELECT * FROM posts;', (err, rows) => {
     if(err) {
       res.status(500).json(err);
     }
-    const containerObject = {
-      posts: rows
-    };
-    res.status(200).json(containerObject);
+    //const containerObject = {
+    //  posts: rows
+    //};
+    res.status(200).json(rows);
   });
 });
 

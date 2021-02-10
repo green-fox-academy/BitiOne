@@ -1,16 +1,20 @@
-'use strict';
+'use strict'
 
 const express = require('express');
+
 const app = express();
 const mysql = require('mysql');
+require('dotenv').config();
+
+app.use(express.static('public'));
 app.use(express.json());
 const PORT = 3000;
 
-let conn = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'hooah2020',
-  database: 'bookstore',
+const conn = mysql.createConnection({
+  host: process.env.MYSQL_HOST,
+  database: process.env.MYSQL_DATABASE,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
 });
 
 conn.connect((err) => {
@@ -21,19 +25,6 @@ conn.connect((err) => {
   console.log('Connection estabilished.');
 });
 
-app.get('/', (req, res) => {
-  res.send('Működik a szerver!');
-});
 
-app.get('/book', (req, res) => {
-  conn.query('SELECT book_name FROM book_mast;', (err, rows) => {
-    if(err) {
-      console.log(err.toString());
-      res.status(500).json({'error': 'Database error!'});
-      return;
-    }
-    res.json(rows);
-  });
-});
 
 app.listen(PORT);
