@@ -25,6 +25,20 @@ conn.connect((err) => {
   console.log('Connection estabilished.');
 });
 
+app.get('/', (req, res) => {
+  res.sendFile('index.html');
+})
 
+app.get('/book', (req, res) => {
+  conn.query('SELECT book_name FROM book_mast;', (err, rows) => {
+    if(err) {
+      console.log(err.toString());
+      res.status(500).json({ 'error': 'Can not read database!' });
+      return;
+    } else {
+      res.json(rows);
+    }
+  })
+})
 
 app.listen(PORT);

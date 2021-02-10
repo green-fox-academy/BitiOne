@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  table-layout: auto;
+  width: fit-content;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td th {
+  border: 1px solid black;
+}
