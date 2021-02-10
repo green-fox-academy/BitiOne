@@ -4,12 +4,17 @@
 }
 
 table {
+  margin: auto;
   table-layout: auto;
-  width: fit-content;
+  width: 90%;
   border: 1px solid black;
   border-collapse: collapse;
 }
 
-td th {
+th {
+  border: 1px solid black;
+}
+
+td {
   border: 1px solid black;
 }
